@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StageCrew.Views.HomeScreen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Account Info:" FontSize="Large" Margin="5"/>
+            
+            <StackLayout x:Name="AccountStuff" Margin="15">
+                <Label Text="Your Name: "/>
+                <Label Text="Location: " />
+            </StackLayout>
+
+            <Label Text="Sets:" FontSize="Large" Margin="5"/>
+            
+            <StackLayout x:Name="SetsStuff" Margin="15">
+                <Button Text="Gig 1" Clicked="ExampleGigClicked"/>
+                <Button Text="Gig 2"/>
+
+            </StackLayout>
+
+            <Button x:Name="CreateNewSetButton" Margin="25" BackgroundColor="BlueViolet" Text="Create New Set +" TextColor="White" WidthRequest="50" HorizontalOptions="End" FontSize="8" Clicked="CreateSetButtonClicked"/>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
